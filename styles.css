@@ -1,0 +1,82 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.home-section {
+    text-align: center;
+    padding: 20px;
+    background-color: #f0f0f0;
+}
+
+.home-section h1 {
+    color: #333;
+}
+
+.home-section p {
+    color: #666;
+}
+
+.calculator {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+}
+
+#formula-box {
+    margin-top: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    min-height: 100px;
+    overflow-y: auto;
+}
+
+input {
+    width: 50%;
+    margin-bottom: 10px;
+    padding: 10px;
+    font-size: 18px;
+    box-sizing: border-box;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#result {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.formula-text {
+    font-weight: bold;
+}
+
+@media only screen and (max-width: 767.98px) {
+    .calculator, .sequence-info {
+        width: 50%;
+        max-width: none;
+    }
+
+    .home-section{
+        width: 50%;
+    }
+
+    .home-section h1 {
+        font-size: 1.5em;
+    }
+
+    .home-section p {
+        font-size: 1em;
+    }
+}
