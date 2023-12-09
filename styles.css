@@ -15,17 +15,18 @@ body {
 
 .home-section {
     text-align: center;
-    padding: 40px;
+    padding: 30px; /* Updated padding for even spacing on the sides */
     background-color: #2c3e50; /* Dark Blue-Gray */
     color: #ecf0f1; /* Light Gray */
+    width: 100%; /* Set width to 100% for mobile view */
 }
 
 .home-section h1 {
-    font-size: 2.5em;
+    font-size: 1.5em; /* Adjusted font size for mobile view */
 }
 
 .home-section p {
-    font-size: 1.2em;
+    font-size: 1em; /* Adjusted font size for mobile view */
 }
 
 .sequence-section {
@@ -109,12 +110,6 @@ button:hover {
         width: 90%;
     }
 
-    /* Adjust the width of home-section */
-    .home-section {
-        width: 100%;
-        padding: 30px; /* Add padding to the sides for even spacing */
-    }
-
     /* Adjust font sizes in home-section */
     .home-section h1 {
         font-size: 1.5em;
@@ -138,4 +133,3 @@ button:hover {
         width: 100%;
     }
 }
-
