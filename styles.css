@@ -50,7 +50,7 @@ body {
 }
 
 .calculator h1 {
-    color: #3498db; /* Blue */
+    color: #000000; /* Blue */
 }
 
 #formula-box {
@@ -63,7 +63,7 @@ body {
 }
 
 input {
-    width: 70%;
+    width: 100%;
     margin-bottom: 15px;
     padding: 15px;
     font-size: 1em;
@@ -74,7 +74,7 @@ button {
     padding: 15px 30px;
     font-size: 1em;
     cursor: pointer;
-    background-color: #3498db; /* Blue */
+    background-color: #28aa2c; /* Blue */
     color: #fff;
     border: none;
     border-radius: 5px;
@@ -82,7 +82,7 @@ button {
 }
 
 button:hover {
-    background-color: #2980b9; /* Darker Blue */
+    background-color: #4caf4fb2; /* Darker Blue */
 }
 
 #result {
@@ -103,6 +103,16 @@ button:hover {
     padding: 30px;
     border-radius: 8px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+@media only screen and (min-width: 768px) {
+    .sequence-section {
+        margin-bottom: 40px; /* Add space at the bottom */
+    }
+
+    .sequence-info {
+        margin-left: 40px; /* Add space to the left */
+    }
 }
 
 @media only screen and (max-width: 767.98px) {
