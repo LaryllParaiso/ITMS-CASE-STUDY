@@ -106,7 +106,7 @@ button:hover {
 
 @media only screen and (max-width: 767.98px) {
     input {
-        width: 100%;
+        width: 90%;
     }
 
     /* Adjust the width of home-section */
@@ -136,7 +136,8 @@ button:hover {
 
     .landing {
         width: 100%;
-        padding: 0 100px; /* Add padding to the sides for even spacing */
+        padding: 30px
+        
     }
 }
 
