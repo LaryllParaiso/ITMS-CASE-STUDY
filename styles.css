@@ -1,37 +1,60 @@
 body {
     font-family: 'Arial', sans-serif;
-    background-color: #f4f4f4;
+    background-color: #e0e0e0;
     margin: 0;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
+.landing {
+    width: 80%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
 .home-section {
     text-align: center;
-    padding: 20px;
-    background-color: #f0f0f0;
+    padding: 40px;
+    background-color: #2c3e50; /* Dark Blue-Gray */
+    color: #ecf0f1; /* Light Gray */
 }
 
 .home-section h1 {
-    color: #333;
+    font-size: 2.5em;
 }
 
 .home-section p {
-    color: #666;
+    font-size: 1.2em;
+}
+
+.sequence-section {
+    display: flex;
+    justify-content: space-between;
+    margin: 40px 0;
+}
+
+.lead {
+    text-indent: 50px;
 }
 
 .calculator {
-    background-color: #fff;
+    background-color: #ecf0f1; /* Light Gray */
     border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    padding: 20px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    padding: 30px;
     text-align: center;
+    width: 45%;
+    margin: 0; /* Remove margin to prevent issues on mobile */
+}
+
+.calculator h1 {
+    color: #3498db; /* Blue */
 }
 
 #formula-box {
-    margin-top: 10px;
-    padding: 10px;
+    margin-top: 20px;
+    padding: 15px;
     border: 1px solid #ccc;
     border-radius: 5px;
     min-height: 100px;
@@ -39,39 +62,60 @@ body {
 }
 
 input {
-    width: 50%;
-    margin-bottom: 10px;
-    padding: 10px;
-    font-size: 18px;
+    width: 70%;
+    margin-bottom: 15px;
+    padding: 15px;
+    font-size: 1em;
     box-sizing: border-box;
 }
 
 button {
-    padding: 10px 20px;
-    font-size: 16px;
+    padding: 15px 30px;
+    font-size: 1em;
     cursor: pointer;
+    background-color: #3498db; /* Blue */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+button:hover {
+    background-color: #2980b9; /* Darker Blue */
 }
 
 #result {
-    font-size: 24px;
+    font-size: 1.5em;
     font-weight: bold;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
+    color: #3498db; /* Blue */
 }
 
 .formula-text {
     font-weight: bold;
+    color: #333;
+}
+
+.sequence-info {
+    width: 45%;
+    background-color: #ecf0f1; /* Light Gray */
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
 }
 
 @media only screen and (max-width: 767.98px) {
-    .calculator, .sequence-info {
-         width: 100%;
-        max-width: none;
+    input {
+        width: 100%;
     }
 
-    .home-section{
-         width: 100%;
+    /* Adjust the width of home-section */
+    .home-section {
+        width: 100%;
+        padding: 30px; /* Add padding to the sides for even spacing */
     }
 
+    /* Adjust font sizes in home-section */
     .home-section h1 {
         font-size: 1.5em;
     }
@@ -79,4 +123,21 @@ button {
     .home-section p {
         font-size: 1em;
     }
+
+    .sequence-section {
+        flex-direction: column;
+    }
+
+    .calculator,
+    .sequence-info {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    /* Add margin to the sides of the landing container */
+    .landing {
+        width: 100%;
+        padding: 0 100px; /* Add padding to the sides for even spacing */
+    }
 }
+
